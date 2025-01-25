@@ -1,0 +1,15 @@
+include: package:flutter_lints/flutter.yaml
+include: package:pedantic/analysis_options.1.11.1.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+linter:
+  rules:
+    - prefere_const_constructors
+    - prefere_const_declarations
+    # - avoid_print
+    - use_key_in_widget_constructors
+    
