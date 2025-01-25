@@ -38,11 +38,45 @@ class _MenuWidget extends StatelessWidget
       width: double.infinity,
       child: Column(
         children: [
-          Row(
-            children: [
-              Icon(Icons.favorite_sharp),
-            ],
-          )
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10) ,
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Icon(Icons.favorite_sharp),
+                SizedBox(width: 15,),
+                Expanded(child: Text('Избранные')),
+            
+                Icon(Icons.chevron_right),
+              ],
+            ),
+          ),
+                   Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10) ,
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Icon(Icons.call),
+                SizedBox(width: 15,),
+                Expanded(child: Text('Звонки')),
+            
+                Icon(Icons.chevron_right),
+              ],
+            ),
+          ),
+                   Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10) ,
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Icon(Icons.computer),
+                SizedBox(width: 15,),
+                Expanded(child: Text('Устройства')),
+            
+                Icon(Icons.chevron_right),
+              ],
+            ),
+          ),
         ],
       ),
     );
